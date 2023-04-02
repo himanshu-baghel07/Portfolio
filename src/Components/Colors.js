@@ -1,0 +1,51 @@
+
+const AppTheme = {
+    light: {
+        jumboBackground: '#f28aaf',
+        background: '#fff',
+        foreground: '#000',
+        planetColor: 'yellow',
+        cardBackground: 'white',
+        navColor: '#D3EBCD',
+        aboutBackground: '#D4ECDD',
+        aboutForeground: '#112031',
+        aboutSectionBackground: '#f5c6c6',
+        aboutSectionForeground: '#210303',
+        aboutHeadingBackground: '#210303',
+        aboutHeadingForeground: 'white',
+        aboutShadow: 'black',
+        DrawerBackground: '#E9D5DA',
+        DrawerForeground: '#363062',
+        JumboHeading: 'black',
+        CardForeground: 'black',
+        ProjectBackground: '#010821',
+        ProjectForeground: '#c8d3fa',
+        ContactForeground: 'black',
+        link: 'green'
+    },
+    dark: {
+        JumboHeading: 'white',
+        jumboBackground: '#45021a',
+        jumboForeground: 'black',
+        background: '#002B5B',
+        foreground: '#fff',
+        planetColor: '#e6e2d8',
+        cardBackground: '#081c29',
+        navColor: '#635666',
+        aboutBackground: '#112031',
+        aboutForeground: '#D4ECDD',
+        aboutSectionBackground: '#210303',
+        aboutSectionForeground: 'white',
+        aboutHeadingBackground: 'white',
+        aboutHeadingForeground: 'black',
+        aboutShadow: 'white',
+        DrawerBackground: '#363062',
+        DrawerForeground: '#E9D5DA',
+        CardForeground: 'white',
+        ProjectBackground: '#c8d3fa',
+        ProjectForeground: '#010821',
+        ContactForeground: 'white',
+        link: 'yellow'
+    }
+}
+export default AppTheme
