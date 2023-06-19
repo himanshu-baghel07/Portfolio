@@ -6,24 +6,31 @@ import {
   Container,
   Typography,
 } from "@mui/material";
-import IosShareIcon from "@mui/icons-material/IosShare";
+import LinkIcon from "@mui/icons-material/Link";
 
 import React, { useContext } from "react";
 
 import ThemeContext from "../Context/ThemeContext";
 import AppTheme from "./Colors";
-import react from "./react.jpg";
-import web from "./web.jpg";
+import reactHooks from "./react hooks.png";
+import reactRouter from "./reactRouter.png";
 
-const Jumbo = () => {
+const Articles = () => {
   const theme = useContext(ThemeContext)[0];
   const currentTheme = AppTheme[theme];
+  const [themeMode] = useContext(ThemeContext);
+
   return (
-    <div id="jumbo">
+    <div id="articles">
       <Container
+        id={
+          themeMode === "light"
+            ? "articleBackgroundLight"
+            : "articleBackgroundDark"
+        }
         maxWidth="false"
         sx={{
-          backgroundColor: `${currentTheme.jumboBackground}`,
+          backgroundColor: `${currentTheme.articleBackground}`,
           paddingBottom: "20px",
         }}
       >
@@ -41,7 +48,7 @@ const Jumbo = () => {
             textShadow: `1px 5px 2px  ${currentTheme.articleHeading}`,
           }}
         >
-          Certification Courses
+          Articles
         </Typography>
         <Box
           sx={{
@@ -61,7 +68,7 @@ const Jumbo = () => {
           <Card
             sx={{
               maxWidth: { md: 350, sm: 280 },
-              backgroundColor: `${currentTheme.cardBackground}`,
+              backgroundColor: `${currentTheme.articleCardBackground}`,
               color: `${currentTheme.foreground}`,
               // marginBottom:{xs:'30px'},
               borderRadius: "15px",
@@ -70,10 +77,10 @@ const Jumbo = () => {
           >
             <CardMedia
               component="img"
-              height="300"
-              image={react}
+              height="250"
+              image={reactHooks}
               alt="react"
-              style={{ cursor: "text" }}
+              style={{ cursor: "text", objectFit: "fill" }}
             />
             <CardContent>
               <Typography
@@ -85,19 +92,20 @@ const Jumbo = () => {
                   marginBottom: "25px",
                 }}
               >
-                ReactJS Developers Certification Course
+                React Hooks
                 <a
                   style={{ color: "red" }}
-                  href="https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/53635/7789047_53635.pdf?1675577916"
+                  href="https://dev.to/himanshubaghel07/react-hooks-31mp"
                 >
-                  <IosShareIcon />
+                  <LinkIcon />
                 </a>
               </Typography>
               <Typography
                 sx={{ fontFamily: "Mukta", cursor: "text", fontSize: "1rem" }}
               >
-                React allow developers to create reusable UI components that can
-                be combined to create complex user interfaces and many more.
+                Hooks are react feature that was introduced in React 16.8 and
+                this allows the developers to use state and react other features
+                in functional components
               </Typography>
             </CardContent>
           </Card>
@@ -105,7 +113,7 @@ const Jumbo = () => {
           <Card
             sx={{
               maxWidth: { md: 350, sm: 280 },
-              backgroundColor: `${currentTheme.cardBackground}`,
+              backgroundColor: `${currentTheme.articleCardBackground}`,
               color: `${currentTheme.foreground}`,
               // marginBottom:{xs:'40px'},
               // marginTop:{md:'10px'},
@@ -114,10 +122,10 @@ const Jumbo = () => {
           >
             <CardMedia
               component="img"
-              height="300"
-              image={web}
+              height="250"
+              image={reactRouter}
               alt="web"
-              style={{ cursor: "text" }}
+              style={{ cursor: "text", objectFit: "fill" }}
             />
             <CardContent>
               <Typography
@@ -127,23 +135,24 @@ const Jumbo = () => {
                 sx={{
                   fontFamily: "Mukta",
                   cursor: "text",
+
                   marginBottom: "25px",
                 }}
               >
-                Responsive Web-Design Certification
+                React Router
                 <a
                   style={{ color: "red" }}
-                  href="https://www.freecodecamp.org/certification/himbaghel/responsive-web-design"
+                  href="https://dev.to/himanshubaghel07/react-router-21k8"
                 >
-                  <IosShareIcon />
+                  <LinkIcon />
                 </a>
               </Typography>
               <Typography
                 sx={{ fontFamily: "Mukta", cursor: "text", fontSize: "1rem" }}
               >
-                In this Responsive Design course, I'll learn the languages like
-                HTML and CSS and webpages that respond to different screen
-                sizes.
+                React Router is a popular library used for handling routing in
+                React applications. In this article, I'll show you how someone
+                can use React router and with example.
               </Typography>
             </CardContent>
           </Card>
@@ -152,4 +161,4 @@ const Jumbo = () => {
     </div>
   );
 };
-export default Jumbo;
+export default Articles;
