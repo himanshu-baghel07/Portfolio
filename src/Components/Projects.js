@@ -71,11 +71,21 @@ const Projects = () => {
                   fontFamily: "Ubuntu",
                   marginBottom: "50px",
                   marginTop: "30px",
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "5px",
                 }}
               >
                 AnyNotess{" "}
-                <a href="https://anynotess.web.app/">
-                  <LaunchIcon sx={{ fontSize: "25px", color: "red" }} />
+                <a
+                  href="https://anynotess.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <LaunchIcon
+                    sx={{ fontSize: "25px", color: "red", paddingBottom: "0" }}
+                  />
                 </a>
               </Typography>
               <Typography
@@ -109,10 +119,18 @@ const Projects = () => {
                   fontFamily: "Ubuntu",
                   marginBottom: "50px",
                   marginTop: "30px",
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "5px",
                 }}
               >
                 Weather Finder{" "}
-                <a href="https://weather-app-ba5df.web.app/">
+                <a
+                  href="https://weather-app-ba5df.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <LaunchIcon sx={{ fontSize: "25px", color: "red" }} />
                 </a>
               </Typography>
@@ -151,10 +169,18 @@ const Projects = () => {
                   fontFamily: "Ubuntu",
                   marginBottom: "50px",
                   marginTop: "30px",
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "5px",
                 }}
               >
                 Todo App{" "}
-                <a href="https://todoapp-ef35a.web.app/">
+                <a
+                  href="https://todoapp-ef35a.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <LaunchIcon sx={{ fontSize: "25px", color: "red" }} />
                 </a>
               </Typography>

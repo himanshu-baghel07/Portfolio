@@ -93,6 +93,22 @@ const Header = () => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText>
+              <AnchorLink
+                href="#experience"
+                style={{
+                  fontSize: "1.7rem",
+                  textDecoration: "none",
+                  color: `${currentTheme.foreground}`,
+                }}
+              >
+                Experience
+              </AnchorLink>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
 
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
@@ -211,6 +227,17 @@ const Header = () => {
                 }}
               >
                 Home
+              </AnchorLink>
+            </Button>
+            <Button sx={{ mr: 15, fontSize: "1.2rem", fontFamily: "Cabin" }}>
+              <AnchorLink
+                href="#experience"
+                style={{
+                  textDecoration: "none",
+                  color: `${currentTheme.foreground}`,
+                }}
+              >
+                Experience
               </AnchorLink>
             </Button>
 

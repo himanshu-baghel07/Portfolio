@@ -10,6 +10,7 @@ import Jumbo from "./Components/Jumbo";
 import Projects from "./Components/Projects";
 import ThemeContext from "./Context/ThemeContext";
 import Articles from "./Components/Articles";
+import Experience from "./Components/Experience";
 
 const App = () => {
   const ThemeHook = useState("light");
@@ -18,6 +19,7 @@ const App = () => {
       <ThemeContext.Provider value={ThemeHook}>
         <Header />
         <HeroSection />
+        <Experience />
         <Jumbo />
         <About />
         <Projects />

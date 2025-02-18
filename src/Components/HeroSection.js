@@ -112,7 +112,6 @@ const HeroSection = () => {
                   fontFamily: "monospace",
                 }}
               >
-                <HomeIcon sx={{ mr: "0.3rem", color: "green" }} />
                 <a
                   style={{
                     marginRight: "0.5rem",
@@ -121,9 +120,11 @@ const HeroSection = () => {
                     marginBottom: { xs: "20px" },
                     fontFamily: "PT Serif",
                   }}
-                  href="https://www.google.com/maps/place/Gwalior,+Madhya+Pradesh/@26.2141559,78.1908989,12z/data=!3m1!4b1!4m6!3m5!1s0x3976c5d1792291fb:0xff4fb56d65bc3adf!8m2!3d26.2124007!4d78.1772053!16zL20vMDE5Nl9o"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.google.com/search?q=banglore&oq=banglore&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIPCAEQLhhDGLEDGIAEGIoFMg8IAhAuGEMYsQMYgAQYigUyDAgDEAAYQxiABBiKBTIKCAQQABixAxiABDIPCAUQLhhDGLEDGIAEGIoFMhIIBhAuGEMYxwEY0QMYgAQYigUyBwgHEAAYgAQyDAgIEAAYQxiABBiKBTIGCAkQLhhA0gEIMzExMWowajGoAgiwAgHxBR1VcduLQPrr&sourceid=chrome&ie=UTF-8#eim=CAEQDBoSMTIuOTcxNTk4NzAwMDAwMDAxIhE3Ny41OTQ1NjI2OTk5OTk5Nw"
                 >
-                  Gwalior,
+                  Bengaluru,
                 </a>{" "}
                 India
               </Typography>

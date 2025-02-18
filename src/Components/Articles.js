@@ -90,12 +90,21 @@ const Articles = () => {
                   fontFamily: "Mukta",
                   cursor: "text",
                   marginBottom: "25px",
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "5px",
                 }}
               >
                 React Hooks
                 <a
-                  style={{ color: "red" }}
+                  style={{
+                    color: "red",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
                   href="https://dev.to/himanshubaghel07/react-hooks-31mp"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <LinkIcon />
                 </a>
@@ -135,14 +144,22 @@ const Articles = () => {
                 sx={{
                   fontFamily: "Mukta",
                   cursor: "text",
-
                   marginBottom: "25px",
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "5px",
                 }}
               >
                 React Router
                 <a
-                  style={{ color: "red" }}
+                  style={{
+                    color: "red",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
                   href="https://dev.to/himanshubaghel07/react-router-21k8"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <LinkIcon />
                 </a>

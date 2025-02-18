@@ -13,7 +13,7 @@ import React, { useContext } from "react";
 import ThemeContext from "../Context/ThemeContext";
 import AppTheme from "./Colors";
 import react from "./react.jpg";
-import web from "./web.jpg";
+import web from "./js_image.png";
 
 const Jumbo = () => {
   const theme = useContext(ThemeContext)[0];
@@ -83,12 +83,21 @@ const Jumbo = () => {
                   fontFamily: "Mukta",
                   cursor: "text",
                   marginBottom: "25px",
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "5px",
                 }}
               >
                 ReactJS Developers Certification Course
                 <a
-                  style={{ color: "red" }}
+                  style={{
+                    color: "red",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
                   href="https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/53635/7789047_53635.pdf?1675577916"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <IosShareIcon />
                 </a>
@@ -128,12 +137,21 @@ const Jumbo = () => {
                   fontFamily: "Mukta",
                   cursor: "text",
                   marginBottom: "25px",
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "5px",
                 }}
               >
-                Responsive Web-Design Certification
+                JavaScript (Basic) Certificate
                 <a
-                  style={{ color: "red" }}
-                  href="https://www.freecodecamp.org/certification/himbaghel/responsive-web-design"
+                  style={{
+                    color: "red",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                  href="https://www.hackerrank.com/certificates/46ca2f063121"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <IosShareIcon />
                 </a>
@@ -141,9 +159,8 @@ const Jumbo = () => {
               <Typography
                 sx={{ fontFamily: "Mukta", cursor: "text", fontSize: "1rem" }}
               >
-                In this Responsive Design course, I'll learn the languages like
-                HTML and CSS and webpages that respond to different screen
-                sizes.
+                It covers topics like, Functions, Currying, Hoisting, Scope,
+                Inheritance, Events and Error Handling.
               </Typography>
             </CardContent>
           </Card>
